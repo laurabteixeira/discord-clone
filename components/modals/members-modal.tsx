@@ -18,11 +18,11 @@ import {
 } from '@/components/ui/dialog'
 import {
   Check,
+  Crown,
   Gavel,
   Loader2,
   MoreVertical,
   Shield,
-  ShieldAlert,
   ShieldCheck,
   ShieldQuestion,
 } from 'lucide-react'
@@ -41,7 +41,7 @@ import {
 const roleIconMap = {
   GUEST: null,
   MODERATOR: <ShieldCheck className="h-4 w-4 text-indigo-500" />,
-  ADMIN: <ShieldAlert className="h-4 w-4 text-rose-500" />,
+  ADMIN: <Crown className="h-4 w-4 text-amber-500" />,
 }
 
 export const MembersModal = () => {
@@ -105,7 +105,7 @@ export const MembersModal = () => {
         <DialogContent className="bg-white text-black overflow-hidden">
           <DialogHeader className="pt-8 px-6">
             <DialogTitle className="text-2xl text-center font-bold">
-              Manage members
+              Manage members of {server?.name}
             </DialogTitle>
             <DialogDescription className="text-center text-zinc-500">
               {server?.members?.length} Member(s)
