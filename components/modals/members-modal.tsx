@@ -105,7 +105,7 @@ export const MembersModal = () => {
         <DialogContent className="bg-white text-black overflow-hidden">
           <DialogHeader className="pt-8 px-6">
             <DialogTitle className="text-2xl text-center font-bold">
-              Manage members of {server?.name}
+              Manage members
             </DialogTitle>
             <DialogDescription className="text-center text-zinc-500">
               {server?.members?.length} Member(s)
