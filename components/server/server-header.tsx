@@ -21,7 +21,7 @@ import {
 import { useModal } from '@/hooks/use-modal-store'
 
 interface ServerHeaderProps {
-  server: ServerWithMembersWithProfiles
+  server?: ServerWithMembersWithProfiles
   role?: MemberRole
 }
 
